@@ -1,0 +1,19 @@
+<!--Property Binding -->
+  <br>
+  <br>
+  <input  [disabled]="isDisabled" type ="text"value ="Angular11"><br>
+  <input  [(ngModel)]="CourseId" type ="text"value ="Angular11">
+  <h1>{{CourseId}}</h1>
+  <!-- click Event -->
+<button (click)="onClick()">click</button>
+<!-- ngIf ngClass  -->
+<h3 *ngIf="Status;then trueBlock else elseBlock"></h3>
+
+<ng-template #trueBlock>
+    <h1 [ngClass]="'one'">trueBlock Applied</h1>
+</ng-template>
+
+<ng-template #elseBlock>
+    <h2>elseBlock Applied</h2>
+</ng-template>
+
